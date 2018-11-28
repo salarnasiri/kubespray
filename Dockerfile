@@ -6,7 +6,7 @@ RUN apt update -y && \
     apt install -y \
     libssl-dev python-dev sshpass apt-transport-https \
     ca-certificates curl gnupg2 software-properties-common python-pip
-RUN curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add - && \
+RUN curl -fsSL https://artifactory.bale.ai:3443/artifactory/download.docker/ubuntu/gpg | apt-key add - && \
     add-apt-repository \
     "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
     $(lsb_release -cs) \
