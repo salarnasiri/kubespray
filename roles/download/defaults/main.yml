@@ -61,9 +61,9 @@ kube_router_version: "v0.2.1"
 multus_version: "v3.1.autoconf"
 
 # Download URLs
-kubeadm_download_url: "https://storage.googleapis.com/kubernetes-release/release/{{ kubeadm_version }}/bin/linux/{{ image_arch }}/kubeadm"
+kubeadm_download_url: "https://artifactory.bale.ai:3443/artifactory/storage.googleapis/release/{{ kubeadm_version }}/bin/linux/{{ image_arch }}/kubeadm"
 etcd_download_url: "https://github.com/coreos/etcd/releases/download/{{ etcd_version }}/etcd-{{ etcd_version }}-linux-amd64.tar.gz"
-hyperkube_download_url: "https://storage.googleapis.com/kubernetes-release/release/{{ kube_version }}/bin/linux/amd64/hyperkube"
+hyperkube_download_url: "https://artifactory.bale.ai:3443/artifactory/storage.googleapis/release/{{ kube_version }}/bin/linux/amd64/hyperkube"
 
 # Checksums
 hyperkube_checksums:
